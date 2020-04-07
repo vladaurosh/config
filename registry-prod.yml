@@ -7,7 +7,7 @@ spring:
         name: jhipster-registry
     cloud:
 	config:
-	     fail-fast: true
+		fail-fast: true
 
 eureka:
     instance:
