@@ -29,3 +29,20 @@ jhipster:
         authentication:
             jwt:
                 secret: 6c3083a1ba0dbdc53cb9b22ec17013c745a401fe6c3083a1ba0dbdc53cb9b22ec17013c745a401fe  
+
+application:  
+    security:
+        unycom-authorization:
+            client-secret: unycom!123
+        argos-authorization:
+            client-secret: ipss!123
+        ipss-authorization:
+            client-secret: argos!123
+        ipfolio-authorization:
+            client-secret: ipfolio!123
+        patorg-authorization:
+            client-secret: patorg!123
+        genese-authorization:
+            client-secret: genese!123
+        greip-authorization:
+            client-secret: greip!123
