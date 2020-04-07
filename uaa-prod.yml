@@ -18,7 +18,13 @@ eureka:
 
 liquibase:
      contexts: dev,testdata
-     
+
+jhipster:
+     security:
+         client-authorization:
+            client-id: external
+            clientSecret: BFCCLGNVPYWtrvoSsSlcts6G8FGNBbgR25Vq3fMUEQb3Kn3wBa8xaXJRCaKFVChf
+
 uaa:
      web-client-configuration:
               secret: ks6Q7ODOOEmMcXCIhGVn
