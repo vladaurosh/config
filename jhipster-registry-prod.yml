@@ -1,6 +1,6 @@
 configserver:
-    name: Docker JHipster Registry
-    status: Connected to the JHipster Registry running in Docker
+    name: JHipster Registry Config Server
+    status: Connected to the JHipster Registry Config Server
 
 spring:
     cloud:
