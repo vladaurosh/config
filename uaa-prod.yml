@@ -1,1 +1,31 @@
-ssss
+configserver:
+    name: JHipster Registry Config Server
+    status: Connected to the JHipster Registry Config Server
+
+spring:
+    cloud:
+        config:
+             fail-fast: true
+    datasource:
+        url: jdbc:postgresql://postgres:5432/postgres
+        username: dbadmin
+        password: Xq2k1Y7VRrsuzM5T
+
+eureka:
+    instance:
+    client:
+        serviceUrl:
+             defaultZone: http://admin:admin@registry1:8761/eureka/,http://admin:admin@registry2:8761/eureka/
+
+liquibase:
+     contexts: dev,testdata
+     
+uaa:
+     web-client-configuration:
+              secret: ks6Q7ODOOEmMcXCIhGVn
+
+jhipster:
+     security:
+        authentication:
+            jwt:
+                base64-secret: NmMzMDgzYTFiYTBkYmRjNTNjYjliMjJlYzE3MDEzYzc0NWE0MDFmZTZjMzA4M2ExYmEwZGJkYzUzY2I5YjIyZWMxNzAxM2M3NDVhNDAxZmUK
