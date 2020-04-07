@@ -1,0 +1,28 @@
+configserver:
+    name: JHipster Registry Config Server
+    status: Connected to the JHipster Registry Config Server
+
+spring:
+    cloud:
+        config:
+             fail-fast: true
+
+eureka:
+    client:
+        serviceUrl:
+             defaultZone: http://admin:admin@registry1:8761/eureka/,http://admin:admin@registry2:8761/eureka/
+
+jhipster:
+     security:
+         client-authorization:
+            client-id: external
+            clientSecret: BFCCLGNVPYWtrvoSsSlcts6G8FGNBbgR25Vq3fMUEQb3Kn3wBa8xaXJRCaKFVChf
+
+oauth2:
+     web-client-configuration:
+          secret: ks6Q7ODOOEmMcXCIhGVn
+          
+application:
+     statis:
+          assets:
+             path:/ui-project-files/
