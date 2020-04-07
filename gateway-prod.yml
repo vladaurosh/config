@@ -23,6 +23,6 @@ oauth2:
           secret: ks6Q7ODOOEmMcXCIhGVn
           
 application:
-     statis:
+     static:
           assets:
              path:/ui-project-files/
