@@ -23,12 +23,6 @@ uaa:
      web-client-configuration:
               secret: ks6Q7ODOOEmMcXCIhGVn
 
-jhipster:
-     security:
-        authentication:
-            jwt:
-                secret: 6c3083a1ba0dbdc53cb9b22ec17013c745a401fe6c3083a1ba0dbdc53cb9b22ec17013c745a401fe  
-
 application:  
     security:
         unycom-authorization:
