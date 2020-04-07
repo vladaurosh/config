@@ -3,8 +3,6 @@ configserver:
     status: Connected to the JHipster Registry running in Docker
 
 spring:
-    application:
-        name: jhipster-registry
     cloud:
         config:
              fail-fast: true
