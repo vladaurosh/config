@@ -33,16 +33,16 @@ jhipster:
 application:  
     security:
         unycom-authorization:
-            client-secret: unycom!123
+            client-secret: vlad123
         argos-authorization:
-            client-secret: ipss!123
+            client-secret: vlad123
         ipss-authorization:
-            client-secret: argos!123
+            client-secret: vlad123
         ipfolio-authorization:
-            client-secret: ipfolio!123
+            client-secret: vlad123
         patorg-authorization:
-            client-secret: patorg!123
+            client-secret: vlad123
         genese-authorization:
-            client-secret: genese!123
+            client-secret: vlad123
         greip-authorization:
-            client-secret: greip!123
+            client-secret: vlad123
