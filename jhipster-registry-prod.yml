@@ -11,8 +11,8 @@ eureka:
     instance:
         appname: registry
         leaseExpirationDurationInSeconds: 90
-		leaseRenewalIntervalInSeconds: 30
-		peerNodeReadTimeoutMs: 5000
+        leaseRenewalIntervalInSeconds: 30
+        peerNodeReadTimeoutMs: 5000
     server:
         enable-self-preservation: false
         registry-sync-retry-wait-ms: 500
