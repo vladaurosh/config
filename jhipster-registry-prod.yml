@@ -10,7 +10,7 @@ spring:
 eureka:
     instance:
         appname: registry
-        preferIpAddress: true
+        preferIpAddress: false
         leaseExpirationDurationInSeconds: 90
         leaseRenewalIntervalInSeconds: 30
         peerNodeReadTimeoutMs: 5000
