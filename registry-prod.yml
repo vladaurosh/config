@@ -5,9 +5,9 @@ configserver:
 spring:
     application:
         name: jhipster-registry
-	cloud:
-	    config:
-		    fail-fast: true
+    cloud:
+	config:
+	     fail-fast: true
 
 eureka:
     instance:
