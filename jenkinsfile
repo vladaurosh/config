@@ -1,0 +1,33 @@
+ansiColor('xterm') {
+
+ //set colors for output
+ color_red = "\033[1;97;41m"
+ color_red_font = "\033[1;31m"
+ color_green = "\033[1;97;42m"
+ color_yellow = "\033[1;97;43m"
+ color_blue = "\033[1;97;44m"
+ color_bold = "\033[1m"
+ color_close = "\033[0m"
+
+ def causes = currentBuild.getBuildCauses()
+ if(causes.iterator().next().userName != null) {
+    currentBuild.displayName = "#${BUILD_NUMBER} ${causes.iterator().next().shortDescription}"
+ } else {
+    SHORTHASH = COMMITHASH.substring(0, 11)
+    currentBuild.displayName = "#${BUILD_NUMBER} Commit $SHORTHASH by $USER_NAME" 
+ } 
+ node {
+     jdk = tool name: 'JDK1.8'
+     env.JAVA_HOME="${jdk}"
+     //env.JAVA_HOME="${tool 'openjdk_11_0_1'}"
+     env.PATH="${jdk}/bin:${env.PATH}"
+     echo "build num ${BUILD_NUMBER}"
+     echo "build id ${BUILD_ID}"
+     echo "build url ${BUILD_URL}"
+     echo "job name ${JOB_NAME}"
+     echo "build tag ${BUILD_TAG}"
+     echo "jenkins url ${JENKINS_URL}"
+     echo "java home ${JAVA_HOME}"
+     echo "workspace ${WORKSPACE}"
+ }
+}
