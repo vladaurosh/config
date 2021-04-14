@@ -28,6 +28,6 @@ ansiColor('xterm') {
      echo "build tag ${BUILD_TAG}"
      echo "jenkins url ${JENKINS_URL}"
      //echo "java home ${JAVA_HOME}"
-     echo "workspace ${WORKSPACE}"
+     //echo "workspace ${WORKSPACE}"
  //}
 }
