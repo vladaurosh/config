@@ -20,7 +20,7 @@ ansiColor('xterm') {
      //jdk = tool name: 'JDK1.8'
      //env.JAVA_HOME="${jdk}"
      //env.JAVA_HOME="${tool 'openjdk_11_0_1'}"
-     env.PATH="${jdk}/bin:${env.PATH}"
+     //env.PATH="${jdk}/bin:${env.PATH}"
      echo "build num ${BUILD_NUMBER}"
      echo "build id ${BUILD_ID}"
      echo "build url ${BUILD_URL}"
